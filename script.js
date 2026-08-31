@@ -1,0 +1,1 @@
+addEventListener('load',()=>setTimeout(()=>{loader.style.opacity=0;setTimeout(()=>loader.remove(),800)},500));

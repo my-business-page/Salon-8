@@ -1,1 +1,1 @@
-addEventListener('load',()=>setTimeout(()=>{loader.style.opacity=0;setTimeout(()=>loader.remove(),800)},500));
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const target=document.querySelector(a.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}}))});
